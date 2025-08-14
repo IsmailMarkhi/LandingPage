@@ -20,8 +20,7 @@ Coming Soon
 ---
 
 ## 🖼 Preview
-![Landing Page Preview](./preview.png)  
-*Add a screenshot or GIF of your page here*
+![Landing Page Preview](./preview.png/p1)  
 
 ---
 
