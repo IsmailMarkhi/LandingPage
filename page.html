@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>MasterAll</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+        <!-- <link rel="stylesheet" href="page.css"> -->
+         <script src="https://cdn.tailwindcss.com"></script>
+         <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        animation: {
+          glow: 'glow 1.5s infinite',
+        },
+        keyframes: {
+          glow: {
+            '0%, 100%': { boxShadow: '0 0 10px #ffd700' },
+            '50%': { boxShadow: '0 0 20px #ffd700' },
+          },
+        },
+      },
+    }
+  }
+</script>
+    </head>
+    <body>
+        <!-- animate-ping
+         animate-spin
+         animate-pulse
+         animate-bounce 
+         animate-glow
+         --------------------
+         <input class="bg-white dark:bg-gray-800 text-black dark:text-white border dark:border-gray-600" />
+
+         --------------------
+transition – enables transitions
+
+duration-500 – sets duration (500ms)
+
+ease-in-out – timing function
+
+hover:scale-110 – transforms on hover-->
+    <header class="flex items-center justify-around md:py-4 py-4 md:p-0 bg-gray-100 w-full shadow-2xl fixed top-0 left-0 z-50">
+        <a href="" class="text-2xl text-sky-700 font-bold">Fluxira</a>
+        <nav class="hidden md:flex bg-sky-700 text-white rounded">
+            <a href="#Fte" class="px-6 py-2 hover:bg-sky-600 border-r transition duration-400">Features</a>
+            <a href="#Cte" class="px-6 py-2 hover:bg-sky-600 transition duration-400">Contact</a>
+        </nav>
+         <nav id="mobilNav" class="hidden md:hidden absolute top-full left-0 bg-sky-700 text-white w-full text-center rounded">
+            <a href="#Fte" class="block py-2 px-8 hover:bg-sky-600 border-b duration-300">Features</a>
+            <a href="#Cte" class="block py-2 px-8 hover:bg-sky-600 border-b duration-300">Contact</a>
+        </nav>
+        <!-- add menu icon  -->
+         <button class="md:hidden bg-sky-700 px-2 py-1 absolute right-[40px]" onclick="Toggle()"><i class="bx bx-menu" style="color:white;"></i></button>
+    </header>
+        <main class="mt-12">
+            <section class="grid grid-cols-1 md:flex items-center justify-around py-4 bg-gray-100 shadow-xl mb-[180]">
+                <h1 class="text-2xl text-center font-bold animate-bounce text-sky-600 shadow-xl">FLUXIRA UNIVER</h1>
+                <img src="brand.jpg" alt="message" class="pb-4 md:w-[400px] overflow-hidden w-full"/>
+            </section>
+            <section class="my-12 bg-sky-100 shadow-xl">
+                <h1 class="text-center font-bold" id="Fte">Features</h1>
+                <div class="grid grid-cols-2  md:grid-cols-4">
+                <div class="bg-sky-100 py-2 px-4 my-5 mx-auto animate-glow">
+                    <h1>Fast Services</h1>
+                </div>
+                <div class="bg-sky-100 py-2 px-4 my-5 mx-auto animate-glow">
+                    <h1>Support 24H/7D</h1>
+                </div>            
+                <div class="bg-sky-100 py-2 px-4 my-5 mx-auto animate-glow">
+                    <h1>Big Community</h1>
+                </div>    
+                <div class="bg-sky-100 py-2 px-4 my-5 mx-auto animate-glow">
+                    <h1>Notifications For News</h1>
+                </div>                  
+                </div>                    
+            </section>
+            <section class="bg-gray-100 shadow-xl">
+                <h1 class="text-center font-bold" id="Cte">Contact</h1>
+                <form class="grid grid-cols-1 p-7">
+                    <input type="text" placeholder="Subject" class="placeholder-gray-700 w-[260px] border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-700 py-2 px-4 my-2 m-auto">
+                    <input type="email" placeholder="Email" class="placeholder-gray-700 w-[260px] border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-700 py-2 px-4 m-auto">
+                    <textarea placeholder="Message US" class="placeholder-gray-700 w-[260px] border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-700 py-2 px-4 m-auto my-2"></textarea>
+                    <!--grid place-items-center  <select class="appearance-none bg-gray-100 font-semibold text-center"> -->
+                    <div class="grid place-items-center">
+                        <select class="w-[260px] bg-gray-100 font-semibold p-2">
+                        <option selected>Select Type Of Your Message</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Problem">Problem</option>
+                        </select>
+                    </div>
+                    <p class="text-center my-2"><input type="checkbox" class="form-checkbox text-sky-100"><a href="privacy.html" class="underline text-sky-600">Accept All</a></p>
+                    <button type="submit" class="bg-sky-700 text-white m-auto py-2 px-8 rounded hover:bg-sky-500 transition duration-300">Send</button>
+                </form>
+            </section>
+        </main>
+        <footer class="bg-sky-700 text-xl text-center text-white mt-10 font-semibold">Fluxira . ALL rights reserved</footer>
+                  <script>
+            function Toggle(){
+                const mobilNav=document.getElementById('mobilNav');
+                const IsHidden=mobilNav.classList.contains('hidden');
+                // control visibility :)
+                mobilNav.classList.toggle('hidden');
+                //control icons
+                const icon=document.querySelector('button i');
+                icon.className = IsHidden ? 'bx bx-x' : 'bx bx-menu';
+            }
+          </script>
+    </body>
+</html>
