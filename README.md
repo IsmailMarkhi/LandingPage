@@ -20,7 +20,7 @@ Coming Soon
 ---
 
 ## 🖼 Preview
-![Landing Page Preview](./preview.png/p1)  
+![Landing Page Preview](./preview.png/p1.png)  
 
 ---
 
