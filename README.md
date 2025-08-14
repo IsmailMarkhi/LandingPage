@@ -16,10 +16,7 @@ Optimized for all devices and accessibility-friendly.
 ---
 
 ## 🚀 Live Demo
-[![Live Demo](https://img.shields.io/badge/🔗%20View-Demo-blue?style=for-the-badge)](https://yourusername.github.io/responsive-landing-page/)
-
-*(If the demo isn’t available yet, write: “Coming Soon”)*
-
+Coming Soon
 ---
 
 ## 🖼 Preview
